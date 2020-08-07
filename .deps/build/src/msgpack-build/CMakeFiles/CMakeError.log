@@ -1,0 +1,87 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1214021461/fast"
+gmake[4]: Entering directory `/tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1214021461.dir/build.make CMakeFiles/cmTryCompileExec1214021461.dir/build
+gmake[5]: Entering directory `/tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1214021461.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIC    -o CMakeFiles/cmTryCompileExec1214021461.dir/CheckSymbolExists.c.o   -c /tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1214021461
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1214021461.dir/link.txt --verbose=1
+/usr/bin/cc   -fPIC     CMakeFiles/cmTryCompileExec1214021461.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1214021461 -rdynamic 
+CMakeFiles/cmTryCompileExec1214021461.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+gmake[5]: Leaving directory `/tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp'
+gmake[5]: *** [cmTryCompileExec1214021461] Error 1
+gmake[4]: *** [cmTryCompileExec1214021461/fast] Error 2
+gmake[4]: Leaving directory `/tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp'
+
+File /tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3528844019/fast"
+gmake[4]: Entering directory `/tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec3528844019.dir/build.make CMakeFiles/cmTryCompileExec3528844019.dir/build
+gmake[5]: Entering directory `/tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3528844019.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3528844019.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3528844019
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3528844019.dir/link.txt --verbose=1
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3528844019.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3528844019 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[5]: Leaving directory `/tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp'
+gmake[5]: *** [cmTryCompileExec3528844019] Error 1
+gmake[4]: Leaving directory `/tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp'
+gmake[4]: *** [cmTryCompileExec3528844019/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test MSGPACK_ENABLE_GCC_CXX_ATOMIC failed with the following output:
+Change Dir: /tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1443226841/fast"
+gmake[4]: Entering directory `/tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1443226841.dir/build.make CMakeFiles/cmTryCompileExec1443226841.dir/build
+gmake[5]: Entering directory `/tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1443226841.dir/src.cxx.o
+/usr/bin/c++    -DMSGPACK_DEFAULT_API_VERSION=3 -std=c++98  -DMSGPACK_ENABLE_GCC_CXX_ATOMIC   -o CMakeFiles/cmTryCompileExec1443226841.dir/src.cxx.o -c /tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp/src.cxx
+/tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp/src.cxx:2:28: fatal error: bits/atomicity.h: No such file or directory
+ #include <bits/atomicity.h>
+                            ^
+compilation terminated.
+gmake[5]: *** [CMakeFiles/cmTryCompileExec1443226841.dir/src.cxx.o] Error 1
+gmake[5]: Leaving directory `/tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp'
+gmake[4]: *** [cmTryCompileExec1443226841/fast] Error 2
+gmake[4]: Leaving directory `/tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <bits/atomicity.h>
+int atomic_sub(int i) { return __gnu_cxx::__exchange_and_add(&i, -1) - 1; }
+int atomic_add(int i) { return __gnu_cxx::__exchange_and_add(&i, 1) + 1; }
+int main(int argc, char * argv[])
+{
+    atomic_sub(1);
+    atomic_add(1);
+}
+

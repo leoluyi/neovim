@@ -1,0 +1,6 @@
+/tmp/neovim/.deps/usr/lib/libluv.a
+/tmp/neovim/.deps/usr/lib/pkgconfig/libluv.pc
+/tmp/neovim/.deps/usr/include/luv/luv.h
+/tmp/neovim/.deps/usr/include/luv/util.h
+/tmp/neovim/.deps/usr/include/luv/lhandle.h
+/tmp/neovim/.deps/usr/include/luv/lreq.h

@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC -O3 -DNDEBUG   -shared -Wl,-soname,c.so -o c.so CMakeFiles/parser.dir/src/parser.c.o 

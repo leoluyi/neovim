@@ -1,0 +1,2 @@
+/tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/msgpackc.dir
+/tmp/neovim/.deps/build/src/msgpack-build/CMakeFiles/msgpackc-static.dir

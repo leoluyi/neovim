@@ -1,0 +1,1 @@
+cmd='/tmp/neovim/.deps/build/src/gperf/configure;--prefix=/tmp/neovim/.deps/usr;MAKE=$(MAKE);CC=/usr/bin/cc;CXX=/usr/bin/c++;LD=/usr/bin/cc'
